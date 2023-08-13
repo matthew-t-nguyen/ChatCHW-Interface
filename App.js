@@ -4,7 +4,17 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text style={styles.baseText}>
+        <Text style={styles.headerText}>
+          Hello,
+        </Text>
+        <Text style={styles.questionText}>
+          {'\n'}
+          {'\n'}
+          How can I help you today?
+        </Text>
+      </Text>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +27,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  baseText: {
+    fontFamily: 'Arial',
+  },
+  headerText: {
+    fontWeight: 'bold',
+    fontSize: 50,
+  },
+  questionText: {
+    fontSize: 18,
+  }
 });
