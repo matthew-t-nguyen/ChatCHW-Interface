@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
   subtitle: {
     flex: 5,
     flexDirection: 'row',
-    padding: 20,
     borderWidth: 2,
     borderColor: '#cccccc',
     width: '80%',
